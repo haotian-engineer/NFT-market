@@ -1,0 +1,10 @@
+.play2Ebtn {
+    width: calc(100% - 30%);
+    background-color: #ef7ab8;
+    font-style: inherit;
+    color: azure;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: white;
+    border: solid;  
+}
