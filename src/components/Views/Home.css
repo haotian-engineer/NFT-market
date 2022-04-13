@@ -6,12 +6,12 @@
     height: 720px;
 }
 
-.btn-connect {
+.btn-connect, .btn-minting, .btn-play2E, .btn-about {
     height: 80px;
-    width: 120px;
-    background-color: #ef7ab8;
+    width: 140px;
+    background-color: #e1636e;
     font-style: inherit;
-    color: azure;
+    color: #fff;
     font-size: 20px;
     border: 5px solid white;
     border-radius: 5px !important;
@@ -19,9 +19,8 @@
 
 .btn-group {
     margin-top: 100px;
-    float: right;
 }
-.btn-connect:hover {
-    background-color: #e05fa4 !important;
+
+.btn-connect,.btn-minting, .btn-play2E, .btn-about :hover {
     color: #fff !important;
 }
