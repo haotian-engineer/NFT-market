@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Minting from "../Minting";
 
 import './Home.css';
 
-export default function Home() {
+const Home = () => {
+    const [isModal, setIsModal] = useState(false);
+
     const navigate = useNavigate();
 
     const about = () => {
         navigate('/about');
     }
+
+    const Toggle = () => setIsModal(!isModal);
+
     return (
         <div className="home">
             <div className="container">
@@ -27,10 +33,10 @@ export default function Home() {
                                         <img src="img/lips.png" className="d-block" />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src="img/images.jpg"  className="d-block" />
+                                        <img src="img/images.jpg" className="d-block" />
                                     </div>
                                     <div className="carousel-item">
-                                        <img src="img/lips.png"  className="d-block" />
+                                        <img src="img/lips.png" className="d-block" />
                                     </div>
                                 </div>
                             </div>
@@ -46,9 +52,11 @@ export default function Home() {
                         <div className="d-flex justify-content-center">
                             <div className="btn-group d-flex flex-column">
                                 <button className="btn btn-connect">CONNECT WALLET</button>
-                                <button className="btn btn-minting mt-5">MINTING</button>
+                                <button className="btn btn-minting mt-5" /*onClick={() => Toggle()}*/ data-bs-toggle="modal" data-bs-target="#myModal">MINTING</button>
+                                
+                                <Minting />
                                 <button className="btn btn-play2E mt-5">PLAY 2E</button>
-                                <button className="btn btn-about mt-5" onClick={about}>ABOUT</button>
+                                <button className="btn btn-about mt-5" onClick={() => about()}>ABOUT</button>
                             </div>
                         </div>
                     </div>
@@ -57,3 +65,5 @@ export default function Home() {
         </div>
     );
 }
+
+export default Home;
