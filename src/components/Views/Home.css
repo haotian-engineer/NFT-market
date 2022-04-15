@@ -69,7 +69,7 @@
     text-align: center;
 }
 
-/* @media screen and (max-width: 756px) {
+@media screen and (max-width: 756px) {
     .home {
         height: 750px !important;
     }
@@ -86,4 +86,4 @@
         flex-direction: row !important;
     }
     
-} */
+}
