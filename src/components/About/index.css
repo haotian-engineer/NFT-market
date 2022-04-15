@@ -1,0 +1,49 @@
+.about {
+    width: 100%;
+    background-color: #e1636e;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .container {
+    padding: 0px;
+}
+
+
+#about {
+    font-size: 35px;
+    color: white;
+    font-family: fantasy;;
+}
+#cardheader {
+    color: black;
+    font-family: fantasy;
+    font-size: 25px;
+}
+.card-body {
+    font-size: 25px;
+    padding: 0px;
+}
+.card {
+    min-height: 100vh;
+}
+.btn-back {
+    height: 60px;
+    width: 100px;
+    background-color: #e1636e;
+    font-style: inherit;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 5px !important;
+    font-family: fantasy;
+}
+
+.btn-back :hover {
+    color: #fff !important;
+    background-color: #e1635e !important;
+}
+
+.text-right {
+    text-align: right;
+}
