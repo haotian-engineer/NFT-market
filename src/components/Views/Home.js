@@ -25,7 +25,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-3 main-container">
+                    <div className="col-md-3 col-sm-3 col-4 main-container">
                         <div className="d-flex justify-content-center">
                             <div className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner">
@@ -42,17 +42,17 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-md-7 col-sm-5 col-4">
                         <p className="buy-container">
                             <button className="btn btn-buy">BUY</button>
                             <div className="nft-text">0.03 BNB per NFT</div>
                         </p>
                     </div>
-                    <div className="col-sm-2">
+                    <div className="col-md-2 col-sm-4 col-4">
                         <div className="d-flex justify-content-center">
-                            <div className="btn-group d-flex flex-column">
+                            <div className="btn-group">
                                 <button className="btn btn-connect">CONNECT WALLET</button>
-                                <button className="btn btn-minting mt-5" /*onClick={() => Toggle()}*/ data-bs-toggle="modal" data-bs-target="#myModal">MINTING</button>
+                                <button className="btn btn-minting mt-5"data-bs-toggle="modal" data-bs-target="#myModal">MINTING</button>
                                 
                                 <Minting />
                                 <button className="btn btn-play2E mt-5">PLAY 2E</button>
