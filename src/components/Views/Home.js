@@ -13,8 +13,6 @@ const Home = () => {
         navigate('/about');
     }
 
-    const Toggle = () => setIsModal(!isModal);
-
     return (
         <div className="home">
             <div className="container">
